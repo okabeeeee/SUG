@@ -21,27 +21,42 @@
 
 ### （可选）基于Xshell和Xftp登录服务器
 1. 下载并安装SsoDBSettings。
+
 <img src="image/2_1.png" width="90%">
+
 2. 打开SsoDBSettings，将Xshell.exe和Xftp.exe的绝对路径写入指定位置。
+
 <img src="image/2_2.png" width="45%">
+
 3. 进入“Web运维配置”窗口，将“SSH”和“FTP/SFTP”的“运维方式”均设为“客户端”。
+
 <img src="image/2_3.png" width="90%">
 <img src="image/2_4.png" width="90%">
+
 4. 使用**服务器账号**登录服务器（SSH协议），客户端工具选择“Xshell”，即可进入命令行界面。
+
 <img src="image/2_5.png" width="90%">
-4. 使用**服务器账号**登录服务器（SFTP协议），客户端工具选择“Xftp”，即可进入数据传输界面。
+
+5. 使用**服务器账号**登录服务器（SFTP协议），客户端工具选择“Xftp”，即可进入数据传输界面。
+ 
 <img src="image/2_6.png" width="90%">
+
 ### 调用公共分析环境（以fastp为例）
 1. 将miniconda3安装到**工作目录**。注意，miniconda3的默认安装位置为**主目录**而非**工作目录**（**主目录**与**工作目录**的区别详见[注意事项](#注意事项)），请在安装过程中进行手动修改。请点击[此处](https://blog.csdn.net/suiyueruge1314/article/details/126705416)查看本步骤的参考流程。
+
 ```
 bash /database/public/software/Miniconda3-latest-Linux-x86_64.sh #若想下载最新版本请访问https://docs.anaconda.com/miniconda/
 ```
+
 2. 调用[公共分析环境](#公共分析环境)。每个公共分析环境均以对应生信分析工具名称命名。
+
 ```
 conda activate /database/public/software/miniconda3/envs/fastp #需输入公共分析环境的绝对路径
 ```
+
 ### （可选）调用自建分析环境（以fastp为例）
 1. 为miniconda3添加国内镜像源。
+
 ```
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
@@ -54,13 +69,17 @@ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/
 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/biobakery
 conda config --set show_channel_urls yes
 ```
+
 2. 创建分析环境并安装相应分析工具。点击[此处](https://www.cnblogs.com/y593216/p/18665216)查看本步骤的参考教程。
+
 ```
 conda create --name fastp #创建一个名为fastp的分析环境
 conda activate fastp # 进入名为fastp的分析环境
 conda install fastp # 安装名为fastp的分析软件
 ```
-4. 调用自建分析环境。
+
+3. 调用自建分析环境。
+
 ```
 conda activate fastp #仅需输入自建分析环境的名称
 ```
