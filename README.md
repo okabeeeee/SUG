@@ -7,12 +7,18 @@
 ## 操作流程
 ### 登录服务器
 1. 使用**运维审计账号**登录[运维审计系统](https://159.226.240.64/#/login)。
+
 <img src="image/1_1.png" width="90%">
+
 2. 使用**服务器账号**登录服务器（SSH协议），进入命令行界面。注意区分**运维审计账号**与**服务器账号**，详见[注意事项](#注意事项)。
+
 <img src="image/1_2.png" width="90%">
 <img src="image/1_3.png" width="90%">
+
 3. 在“文件传输”窗口进行数据的下载与上传。
+   
 <img src="image/1_4.png" width="90%">
+
 ### （可选）基于Xshell和Xftp登录服务器
 1. 下载并安装SsoDBSettings。
 <img src="image/2_1.png" width="90%">
