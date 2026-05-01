@@ -15,7 +15,7 @@
 <img src="image/1_2.png" width="90%">
 <img src="image/1_3.png" width="90%">
 
-3. 在**“文件传输”**窗口进行数据的下载与上传。
+3. 在“文件传输”窗口进行数据的下载与上传。
 
 <img src="image/1_4.png" width="90%">
 
@@ -33,11 +33,11 @@
 <img src="image/2_3.png" width="90%">
 <img src="image/2_4.png" width="90%">
 
-4. 使用**服务器账号**登录服务器（SSH协议），选择“Xshell”，即可进入命令行界面。
+4. 使用**服务器账号**登录服务器（SSH协议），客户端工具选择“Xshell”，即可进入命令行界面。
 
 <img src="image/2_5.png" width="90%">
 
-4. 使用**服务器账号**登录服务器（SFTP协议），选择“Xftp”，即可进入数据传输界面。
+4. 使用**服务器账号**登录服务器（SFTP协议），客户端工具选择“Xftp”，即可进入数据传输界面。
 
 <img src="image/2_6.png" width="90%">
 
