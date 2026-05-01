@@ -24,7 +24,7 @@
 
 <img src="image/2_1.png" width="90%">
 
-2. 打开SsoDBSettings，将Xshell.exe和Xftp.exe的绝对路径写入指定位置。
+2. 打开SsoDBSettings，将Xshell.exe和Xftp.exe的绝对路径写入指定位置。点击下载[Xshell](Xshell_7.0.0134_Green.7z)和[Xftp](Xftp_6.0.0191_Green.exe)。
 
 <img src="image/2_2.png" width="45%">
 
