@@ -1,48 +1,45 @@
 # 服务器使用指南
 ## 基本信息
 ### 存储空间
-共有3个存储卷：/dev/sdc（**32TB**）、/dev/sda1（**10TB**）和/dev/sdm1（**15TB**），分别挂载于`/database`、`/database_new`和`/data`。
+共有3个硬盘分区：`/database`（**32TB**）、`/database_new`（**10TB**）和`/data`（**15TB**）。
 ### 计算资源
-配备了两颗Intel Xeon Gold 6230处理器，每颗拥有20个物理核心，总计提供**80**个逻辑CPU。物理内存共**1TB**。
+共有2颗Intel Xeon Gold 6230处理器，每颗拥有20个物理CPU，总计提供**80**个逻辑CPU。物理内存共**1TB**。
 ## 操作流程
 ### 登录服务器
 1. 使用**运维审计账号**登录[运维审计系统](https://159.226.240.64/#/login)。
 
-<img src="image/登录运维审计系统并访问服务器_1.png" width="90%">
+<img src="image/1_1.png" width="90%">
 
-2. 登录协议为“SSH”的主机。
+2. 使用**服务器账号**登录服务器（SSH协议），进入命令行界面。注意区分**运维审计账号**与**服务器账号**，详见[注意事项](#注意事项)。
 
-<img src="image/登录运维审计系统并访问服务器_2.png" width="90%">
+<img src="image/1_2.png" width="90%">
+<img src="image/1_3.png" width="90%">
 
-3. 使用**服务器账号**登录服务器，进入命令行界面。注意区分**运维审计账号**与**服务器账号**，详见[注意事项](#注意事项)。
+3. 在**“文件传输”**窗口进行数据的下载与上传。
 
-<img src="image/登录运维审计系统并访问服务器_3.png" width="90%">
+<img src="image/1_4.png" width="90%">
 
-4. 在“文件传输”板块进行数据的下载与上传。
-
-<img src="image/在网页端进行数据传输_1.png" width="90%">
-
-### （可选）在Xshell和Xftp中登录服务器
+### （可选）基于Xshell和Xftp登录服务器
 1. 下载并安装SsoDBSettings。
 
-<img src="image/在Xshell客户端访问服务器_1.png" width="90%">
+<img src="image/2_1.png" width="90%">
 
-2. 打开SsoDBSettings，将Xshell.exe和Xftp.exe的绝对路径写入指定位置后保存。
+2. 打开SsoDBSettings，将Xshell.exe和Xftp.exe的绝对路径写入指定位置。
 
-<img src="image/在Xshell客户端访问服务器_2.png" width="45%">
+<img src="image/2_2.png" width="45%">
 
-3. 进入在“主机运维”页面的“Web运维配置”板块，将“SSH”和“FTP/SFTP”的“运维方式”均设为“客户端”。
+3. 进入“Web运维配置”窗口，将“SSH”和“FTP/SFTP”的“运维方式”均设为“客户端”。
 
-<img src="image/在Xshell客户端访问服务器_3.png" width="90%">
-<img src="image/在Xshell客户端访问服务器_4.png" width="90%">
+<img src="image/2_3.png" width="90%">
+<img src="image/2_4.png" width="90%">
 
-4. 登录协议为“SSH”的主机，选择“Xshell”，即可进入命令行界面。
+4. 使用**服务器账号**登录服务器（SSH协议），选择“Xshell”，即可进入命令行界面。
 
-<img src="image/在Xshell客户端访问服务器_5.png" width="90%">
+<img src="image/2_5.png" width="90%">
 
-4. 登录协议为“SFTP”的主机，选择“Xftp”，即可进入数据传输界面。
+4. 使用**服务器账号**登录服务器（SFTP协议），选择“Xftp”，即可进入数据传输界面。
 
-<img src="image/在Xftp客户端进行数据传输_4.png" width="90%">
+<img src="image/2_6.png" width="90%">
 
 ### 配置分析环境
 1. 将miniconda3安装到**工作目录**。注意，miniconda3的默认安装位置为**主目录**而非**工作目录**（**主目录**与**工作目录**的区别详见[注意事项](#注意事项)），请在安装过程中进行手动修改。请点击[此处](https://blog.csdn.net/suiyueruge1314/article/details/126705416)查看本步骤的参考流程。
